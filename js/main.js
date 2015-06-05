@@ -236,7 +236,7 @@ $(document).ready(function() {
     $(".edit").click(function ()
     {
         id = $(this).parent().parent().attr('id');
-        location.href='http://localhost:8888/schedule/index.php?id='+id+'&action=edit';
+        location.href='http://localhost/schedule/index.php?id='+id+'&action=edit';
     });
 });
 
@@ -245,7 +245,7 @@ $(document).ready(function() {
     $(".redirect_back").click(function ()
     {
         id = $(this).parent().parent().attr('id');
-        location.href='http://localhost:8888/schedule/index.php';
+        location.href='http://localhost/schedule/index.php';
     });
 });
 
@@ -256,7 +256,7 @@ $(document).ready(function() {
     $(".delete_yes").click(function ()
     {
         id = $(this).parent().parent().attr('id');
-        location.href='http://localhost:8888/schedule/index.php?id='+id+'&action=delete';
+        location.href='http://localhost/schedule/index.php?id='+id+'&action=delete';
     });
 });
 
