@@ -1,0 +1,805 @@
+/*MAIN STYLES*/
+
+/*HEADER SECTION*/
+
+body
+{
+    background-color: #fff;
+}
+
+.wrapper
+{
+	font-family: "Helvetica Neue", sans-serif;
+    margin: 20px 50px;
+    height: 100%;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    min-width:800px;
+    font-weight: 200;
+
+}
+#header
+{
+    font-size:0px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+.timeline-box
+{
+	position: relative;
+    overflow-x:scroll;
+    overflow-y: hidden;
+    width:85%;
+    display: inline-block;
+}
+.timeline 
+{
+	position: relative;
+	font-size:0;
+    border-bottom: 1px #000 solid;
+}
+.timeline .month .i:first-child
+{
+	border-left:1px #000 solid;
+}
+
+.month {display: inline-block;}
+.month-name 
+{
+	position:relative; 
+	display:block;
+	margin-left:5px;
+	margin-bottom: 5px;
+	font-size:20px;
+}
+
+.date 
+{
+	font-size:12px; 
+	display:block;
+	text-align:center;
+	position: relative;
+	top: 10px;
+	font-style:italic;
+}
+
+.day-line 
+{
+	position: relative; 
+	display:inline-block; 
+	width:29px;
+	border-right: 1px solid #000;
+	border-top: 1px solid  #000;
+	
+	
+}
+.first {border-left:1px #000 solid;}
+
+.first .date
+{
+	font-size:30px;
+	font-style:normal;
+
+}
+.month i:last-child {border-right-style:none;}
+
+.first-month
+{
+	border-left:1px #000 solid;
+}
+
+.weekend
+{
+	background-color:#f47f38;
+	opacity:0.5;
+}
+
+/*CONTENT AREA*/
+.content 
+{
+	position:relative;
+}
+
+
+/*project name*/
+.name 
+{
+	width:100%;
+	line-height: 30px;
+	text-align:center;
+	font-size:20px;
+	cursor:pointer;
+	outline: none;
+    border-bottom: 1px #000 solid;
+    border-left: 1px solid #000;
+}
+
+.name .task:last-child{
+    margin-bottom: 30px;
+}
+
+.name .task {
+    display: block;
+    font-size: 15px;
+}
+.name ul
+{
+	display:block;	
+}
+.name ul li 
+{
+	width:200px;
+}
+.name ul li .flaticon-delete30
+{
+	float:right;
+	color:#666666;
+}
+.name ul, .name h2
+{
+	text-align:left;
+}
+
+
+.name .description
+{
+	width:300px;
+	font-size:16px;
+}
+.name .marks
+{
+	
+}
+
+.name:focus .description
+{
+	display:block;
+} 
+
+
+/*project schedule block*/
+.project-schedule
+{
+	display:inline-block;
+	position:relative;
+	outline:0;
+	top: 4px;
+    margin-top: 30px;
+}
+
+.project-schedule span 
+{
+	background-color:#38f4c6; 
+	height:22px; 
+	display:block;
+	border-radius:10px; 
+	font-family:"Helvetica Neue", sans-serif;;
+	font-size:12px;
+	text-align: center;
+	line-height: 20px;
+	position:relative;
+	left:1px;
+	cursor:pointer;
+    margin-top: 9px;
+
+	 
+}
+.project-schedule span:first-child {
+    margin-top: 0;
+
+}
+.project-schedule span:hover
+{
+	background-color:#888888;
+	color: #fff; 
+}
+
+.project-list
+{
+	font-size:0;
+    position: absolute;
+    top: 71px;
+}
+.project:first-child
+{
+	border-top:1px #000 solid;
+}
+
+.project
+{
+	border-bottom: 1px #000 solid;
+	height: 240px;
+}
+
+#current
+{
+    background-image: linear-gradient(rgb(30, 148, 212) 10%, rgb(27, 71, 171) 100%);
+	color:#fff;
+}
+.scroll-button
+{
+	float: left;
+    margin-right: 10px;
+}
+
+
+/*project description styles*/
+
+.project-schedule:focus .description
+{
+	display:block;
+}
+
+.description
+{
+	z-index:10;
+	position:absolute;
+	width:500px;
+	display:none;
+	background-color: #ededd7;
+	border-radius:15px;
+	padding:10px;
+	border:1px #000 dashed;
+	top:28px;
+	left:10px;
+}
+.description p:last-child
+{
+	margin-bottom:0px !important;
+}
+
+.description h2
+{
+	font-size:20px;
+	margin-bottom: 10px;
+	color: #080c8e;
+	
+}
+
+.description .main-spec
+{
+	
+	margin-left:20px;
+}
+.description .main-spec h3
+{
+	font-size:18px;
+	color:#080c8e;
+	margin-bottom:10px;
+}
+
+.description p
+{
+	font-size:15px;
+	margin-bottom:20px;
+}
+.description .main-spec p
+{
+	font-size:15px;
+	margin-bottom:20px !important;
+}
+.description strong
+{
+	font-weight:600;
+}
+
+.total
+{
+	margin-top:10px;
+	display: block;
+} 
+
+/*ADD PROJECT SECTION*/
+
+.add-section 
+{
+	font-size:14px;
+	font-family:"Helvetica Neue", sans-serif;
+    margin-top:25px;
+    display: none;
+}
+.opened
+{
+    display: block;
+}
+
+.add-section h1
+{
+	margin-bottom:5px;
+	font-size:25px;
+}
+
+.project-options input
+{
+	outline:0px;
+    margin-left: 10px;
+    width: 50%;
+    font-size: 1em;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 200;
+    border: 2px solid #999;
+    padding: 5px;
+    display: inline;
+    box-sizing: border-box;
+}
+
+.project-options input[type=checkbox]
+{
+    position: relative;
+    top: 3px;
+    right: 5px;
+}
+.project-options input:focus
+{
+    border-color: #0089ec;
+}
+.add-project
+{
+	width: 100%;
+	border: 1px #000 solid;
+	border-radius: 10px;
+    height: 1060px;
+
+}
+.add-project h2
+{
+	top: -11px;
+    left: 130px;
+	display: block;
+	position: relative;
+	background-color: #fff;
+	width: 100px;
+	padding-left: 2px;
+	border-color: #188BB5;
+	font-size: 18px;
+}
+.project-options
+{
+	width: 20%;
+    display: inline-block;
+    margin-left: 0.5%;
+    float: left;
+    margin-right: 20px;
+}
+.project-options fieldset
+{
+    margin: 10px 0;
+    border: 0;
+    padding: 0;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.project-options fieldset input
+{
+    width: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 200;
+    border: 2px solid #999;
+    padding: 5px;
+    display: inline;
+    box-sizing: border-box;
+    outline: 0;
+    height: 47px;
+}
+.project-options p
+{
+    font-size: 16px;
+}
+.names
+{
+	display:inline-block;
+	line-height: 15px;
+    float: left;
+    width: 100px;
+    margin-top: 6px;
+}
+.p_name
+{
+	display:block;
+    margin-top: 18px;
+    cursor: pointer;
+}
+
+
+.checks
+{
+	display:inline-block;
+	line-height: 15px;
+	position: relative;
+	top: 4px;
+    margin-right: 5%;
+}
+.left {float: left;}
+.checks input
+{
+	display:block;
+}
+.add-project .flaticon-delete30
+{
+	color:#fff;
+}
+
+.flaticon-accepted:before
+{
+	right: 16px;
+	position: relative;
+	top: 1px;
+	color: #fff;
+}
+.button
+{
+	height: 70px;
+	width: 70px;
+	outline:0;
+	cursor:pointer;
+    padding:10px;
+    position:relative;
+    font-family: 'Open Sans', sans-serif;
+    font-size:12px;
+    text-decoration:none;
+    color:#fff;
+    border: solid 1px #146c83;
+    background-image: linear-gradient(rgb(30, 148, 212) 10%, rgb(27, 71, 171) 100%);
+    border-radius: 5px;
+
+}
+
+.button:active
+{
+    background-image: linear-gradient(rgb(27, 71, 171) 10%, rgb(30, 148, 212) 100%);
+}
+.name-list
+{
+   display: inline-block;
+   position: relative;
+   float:left;
+   top:71px;
+   width: 15%;
+}
+
+.name-list:first-child{
+    border-top:1px #000 solid;
+}
+
+.projDescr
+{
+    width: 99%;
+    height: 625px;
+    margin: 20px auto;
+}
+
+.projDescr textarea
+{
+    outline: 0;
+}
+.add-section h3
+{
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.date_wrapper
+{
+    width: 40%;
+    display: inline-block;
+    float: left;
+}
+
+.datepicker
+{
+    display: block;
+}
+.name-box
+{
+    margin-top: 27px;
+}
+.status
+{
+    margin-top: 5px;
+}
+textarea {
+    resize: none;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    border: 2px solid #999;
+    padding: 5px;
+    display: inline;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 !important;
+    outline: 0;
+    height: 80px;
+}
+textarea:focus {
+    border-color: #0089ec;
+}
+.file_drop
+{
+
+}
+.opened
+{
+    display: block;
+}
+.names .p_name .file_drop p
+{
+    margin-top: 10px;
+    text-align: center;
+}
+.close, .close-project
+{
+    position: relative;
+    height: 20px;
+    width: 36px;
+    display: block;
+    float: right;
+    top: 4px;
+    right: 4px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.file_drop {
+
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    border: 1px solid #ccc;
+    z-index: 100;
+    background-color: #eee;
+    cursor: default;
+    display: none;
+    left: 105px;
+    top: 190px;
+    color: #555;
+    font-size: 14px;
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.developers
+{
+    width: 20%;
+    display: inline-block;
+    margin-left: 0.5%;
+    font-size: 16px;
+    float: left;
+}
+.developers fieldset {
+    margin: 10px 0;
+    border: 0;
+    padding: 0;
+    width: 100%;
+}
+.developers input
+{
+    font-size: 16px;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 200;
+    border: 2px solid #999;
+    padding: 5px;
+    display: inline;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 !important;
+    outline: 0;
+    height: 47px;
+}
+.developers input:focus {
+    border-color: #0089ec;
+}
+.buttons
+{
+    width: 15%;
+    display: inline-block;
+    font-size: 16px;
+    height: 306px;
+    margin-top: 18px;
+    margin-left: 1%;
+    height: 471px;
+}
+
+.button_box, .submit
+{
+    display: block;
+    width: 82%;
+    height: 47px;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 10px;
+}
+
+.submit{
+    height: 70px;
+    width: 95%;
+}
+
+
+
+
+#confirmOverlay, #confirmOverlay2
+{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background: -moz-linear-gradient(rgba(11,11,11,0.1), rgba(11,11,11,0.6)) repeat-x rgba(11,11,11,0.2);
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(11,11,11,0.1)), to(rgba(11,11,11,0.6))) repeat-x rgba(11,11,11,0.2);
+    z-index:100000;
+    display: none;
+}
+
+#confirmBox{
+    background-color: #e5e5e5;
+    border-radius: 25px;
+    width:460px;
+    position:fixed;
+    left:50%;
+    top:50%;
+    margin:-130px 0 0 -230px;
+    border: 1px solid rgba(33, 33, 33, 0.6);
+
+    -moz-box-shadow: 0 0 2px rgba(255, 255, 255, 0.6) inset;
+    -webkit-box-shadow: 0 0 2px rgba(255, 255, 255, 0.6) inset;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.6) inset;
+}
+
+#confirmBox h1,
+#confirmBox p{
+    font-size: 16px;
+    font-family: "Helvetica Neue", sans-serif;
+    padding: 18px 25px;
+    color:#666;
+    text-align: center;
+    font-weight: 200;
+}
+
+#confirmBox h1{
+    font-family: "Helvetica Neue", sans-serif;
+    color:#888;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+#confirmBox p{
+    background:none;
+    font-size:16px;
+    line-height:1.4;
+    padding-top: 35px;
+}
+
+#confirmButtons{
+    padding:15px 0 25px;
+    text-align:center;
+}
+
+#confirmBox .button{
+    display:inline-block;
+    color:white;
+    position:relative;
+    height: 33px;
+    font-size: 16px;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 200;
+    margin-right: 15px;
+    padding: 0 35px 0 40px;
+    text-decoration:none;
+    border:none;
+    line-height: 33px;
+}
+
+#confirmBox .button:last-child{	margin-right:0;}
+
+#confirmBox .button span{
+    position:absolute;
+    top:0;
+    right:-5px;
+    width:5px;
+    height:33px
+}
+
+/*checkbox styles*/
+.squaredThree {
+    width: 20px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.squaredThree label {
+    cursor: pointer;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    border-radius: 4px;
+
+    -webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,.4);
+    -moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,.4);
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,.4);
+
+    background: -webkit-linear-gradient(top, #1e94d4 0%, #1b47ab 100%);
+    background: -moz-linear-gradient(top, #1e94d4 0%, #1b47ab 100%);
+    background: -o-linear-gradient(top, #1e94d4 0%, #1b47ab 100%);
+    background: -ms-linear-gradient(top, #1e94d4 0%, #1b47ab 100%);
+    background: linear-gradient(top, #1e94d4 0%, #1b47ab 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e94d4', endColorstr='#1b47ab',GradientType=0 );
+}
+
+.squaredThree label:after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 5px;
+    background: transparent;
+    top: 4px;
+    left: 4px;
+    border: 3px solid #fcfff4;
+    border-top: none;
+    border-right: none;
+
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.squaredThree label:hover::after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+    opacity: 0.3;
+}
+
+.squaredThree input[type=checkbox]:checked + label:after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+.checks-wrapper {display: inline-block; width: 128px;}
+
+.edit_panel {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid;
+    border-radius: 6px;
+    padding: 10px 10px 14px 10px;
+    margin-right: 6px;
+    display: none;
+}
+
+.beta {
+    width:99.5% !important;
+    color: #1B47AB;
+    font-weight:bold !important;
+}
+
+
+.edit_panel span {
+
+    display: inline-block;
+    height: 20px;
+    padding-top: 0px;
+    width: 40px;
+    margin:5px;
+}
+
+
+
+

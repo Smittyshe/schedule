@@ -1,0 +1,59 @@
+/**
+ * Housekeeping
+ */
+
+.datepickers {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    /*width: 100%;*/
+
+
+}
+.datepickers fieldset {
+    margin: 10px 0;
+    border: 0;
+    padding: 0;
+    position: relative;
+    display: inline-block;
+    width: 49%;
+}
+.datepickers input {
+    font-size: 16px;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 200;
+    border: 2px solid #999;
+    padding: 5px;
+    display: inline;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 !important;
+    outline: 0;
+    height: 47px;
+}
+.datepickers .beta {
+    border-color: #1b47ab;
+}
+.datepickers input:focus {
+    border-color: #0089ec;
+}
+.datepickers a {
+    color: #0089ec;
+    text-decoration: none;
+}
+.datepickers a:hover {
+    text-decoration: underline;
+}
+
+.datepickers .whitespace:before {
+    color: #ccc;
+    background: #f5f5f5;
+    margin: 1em 0;
+    padding: 5em 0;
+    font-weight: bold;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+}

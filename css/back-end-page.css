@@ -1,0 +1,101 @@
+/*MAIN STYLES*/
+.wrapper 
+{
+	font-size:14px;
+	font-family:Helvetica;
+	margin:20px 0 0 20px; 
+}
+.wrapper h1
+{
+	margin-bottom:50px;
+	font-size:25px;
+	
+}
+
+.wrapper .add-project form input
+{
+	outline:0px;
+}
+
+.add-project
+{
+	width: 400px;
+	height: 400px;
+	border: 1px #000 solid;
+	border-radius: 10px;
+	padding: 10px;
+}
+.add-project h2
+{
+	top: -21px;
+	display: block;
+	position: relative;
+	background-color: #fff;
+	width: 100px;
+	padding-left: 2px;
+	border-color: #188BB5;
+	font-size: 18px;
+}
+.project-options
+{
+	margin: 3px 0 0 25px;
+}
+.names
+{
+	display:inline-block;
+	line-height: 15px;
+}
+.names label
+{
+	display:block;
+
+}
+.checks
+{
+	display:inline-block;
+	line-height: 15px;
+	position: relative;
+	top: 4px;
+}
+.checks input
+{
+	display:block;
+}
+.close-button
+{
+	position: relative;
+	height: 20px;
+	display: block;
+	width: 20px;
+	border: 1px #000 solid;
+	top: -21px;
+	float: right;
+	left: 22px;
+	border-radius: 10px;
+	background-color: #188BB5;
+	cursor: pointer;
+	font-size: 25px;
+	line-height: 16px;
+}
+.flaticon-accepted:before
+{
+	right: 16px;
+	position: relative;
+	top: 1px;
+	color: #fff;
+}
+.button
+{
+	margin-bottom: 19px;
+	height: 70px;
+	width: 70px;
+	border-radius: 15px;
+	outline:0;
+}
+.flaticon-actualize:before
+{
+	font-size: 45px !important;
+	position: relative;
+	right: 15px;
+	bottom: 6px;	
+}
